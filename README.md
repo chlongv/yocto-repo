@@ -11,9 +11,15 @@ Since **repo** is a script, it can easily be installed so (taken from https://ge
     $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
     $ chmod a+rx ~/.bin/repo
 
-Then to checkout all the git repos (here poky + the various meta layers), the **repo init** command shall be used:
+The next step is to initialize repo manifest in the directory where you want to checkout the git repos (in this case in the created yocto dir), with the **repo init** command:
 
+    $ mkdir yocto
+    $ cd yocto
     $ repo init -u git@github.com:chlongv/yocto-repo.git
+
+Finally, to checkout all the git repos (here poky + the various meta layers), the **repo sync** command shall be used:
+
+    $ repo sync
 
 ## Included meta layers
 
