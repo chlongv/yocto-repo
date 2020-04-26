@@ -18,4 +18,7 @@
   <project name="meta-clang" revision="master"  remote="kraj" path="meta-clang">
     <linkfile src="." dest="poky/meta-clang" />
   </project>
+  <project name="meta-raspberrypi" revision="master"  remote="yocto" path="meta-raspberrypi">
+    <linkfile src="." dest="poky/meta-raspberrypi" />
+  </project>
 </manifest>
