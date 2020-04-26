@@ -5,20 +5,23 @@
 
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
-  <remote name="qt5" fetch="git://github.com/meta-qt5" />
   <remote name="kraj" fetch="git://github.com/kraj" />
+  <remote name="igalia" fetch="git://github.com/Igalia" />
 
   <project name="poky" revision="master" remote="yocto" />
   <project name="meta-openembedded" revision="master"  remote="oe" path="meta-openembedded">
     <linkfile src="." dest="poky/meta-openembedded" />
-  </project>
-  <project name="meta-qt5" revision="master"  remote="qt5" path="meta-qt5">
-    <linkfile src="." dest="poky/meta-qt5" />
   </project>
   <project name="meta-clang" revision="master"  remote="kraj" path="meta-clang">
     <linkfile src="." dest="poky/meta-clang" />
   </project>
   <project name="meta-raspberrypi" revision="master"  remote="yocto" path="meta-raspberrypi">
     <linkfile src="." dest="poky/meta-raspberrypi" />
+  </project>
+  <project name="meta-security" revision="master"  remote="yocto" path="meta-security">
+    <linkfile src="." dest="poky/meta-security" />
+  </project>
+  <project name="meta-webkit" revision="master"  remote="igalia" path="meta-webkit">
+    <linkfile src="." dest="poky/meta-webkit" />
   </project>
 </manifest>
