@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Link to the manifest format reference: https://gerrit.googlesource.com/git-repo/+/HEAD/docs/manifest-format.md -->
+  <default remote="yocto" revision="master"/>
+
+  <remote name="yocto" fetch="git://git.yoctoproject.org" />
+  <remote name="oe" fetch="git://git.openembedded.org" />
+  <remote name="qt5" fetch="git://github.com/meta-qt5" />
+  <remote name="kraj" fetch="git://github.com/kraj" />
+
+  <project name="poky" revision="master" remote="yocto" />
+  <project name="meta-openembedded" revision="master"  remote="oe" path="meta-openembedded">
+    <linkfile src="." dest="poky/meta-openembedded" />
+  </project>
+  <project name="meta-qt5" revision="master"  remote="qt5" path="meta-qt5">
+    <linkfile src="." dest="poky/meta-qt5" />
+  </project>
+  <project name="meta-clang" revision="master"  remote="kraj" path="meta-clang">
+    <linkfile src="." dest="poky/meta-clang" />
+  </project>
+</manifest>
