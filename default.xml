@@ -8,20 +8,20 @@
   <remote name="kraj" fetch="git://github.com/kraj" />
   <remote name="igalia" fetch="git://github.com/Igalia" />
 
-  <project name="poky" revision="master" remote="yocto" />
-  <project name="meta-openembedded" revision="master"  remote="oe" path="meta-openembedded">
+  <project name="poky" revision="zeus" remote="yocto" />
+  <project name="meta-openembedded" revision="zeus"  remote="oe" path="meta-openembedded">
     <linkfile src="." dest="poky/meta-openembedded" />
   </project>
-  <project name="meta-clang" revision="master"  remote="kraj" path="meta-clang">
+  <project name="meta-clang" revision="zeus"  remote="kraj" path="meta-clang">
     <linkfile src="." dest="poky/meta-clang" />
   </project>
-  <project name="meta-raspberrypi" revision="master"  remote="yocto" path="meta-raspberrypi">
+  <project name="meta-raspberrypi" revision="zeus"  remote="yocto" path="meta-raspberrypi">
     <linkfile src="." dest="poky/meta-raspberrypi" />
   </project>
-  <project name="meta-security" revision="master"  remote="yocto" path="meta-security">
+  <project name="meta-security" revision="zeus"  remote="yocto" path="meta-security">
     <linkfile src="." dest="poky/meta-security" />
   </project>
-  <project name="meta-webkit" revision="master"  remote="igalia" path="meta-webkit">
+  <project name="meta-webkit" revision="zeus"  remote="igalia" path="meta-webkit">
     <linkfile src="." dest="poky/meta-webkit" />
   </project>
 </manifest>
