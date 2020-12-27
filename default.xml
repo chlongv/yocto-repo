@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Link to the manifest format reference: https://gerrit.googlesource.com/git-repo/+/HEAD/docs/manifest-format.md -->
-  <default remote="yocto" revision="master"/>
+  <default remote="yocto" revision="gatesgarth"/>
 
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
   <remote name="kraj" fetch="git://github.com/kraj" />
   <remote name="igalia" fetch="git://github.com/Igalia" />
 
-  <project name="poky" revision="master" remote="yocto" />
-  <project name="meta-openembedded" revision="master"  remote="oe" path="meta-openembedded">
+  <project name="poky" revision="gatesgarth" remote="yocto" />
+  <project name="meta-openembedded" revision="gatesgarth"  remote="oe" path="meta-openembedded">
     <linkfile src="." dest="poky/meta-openembedded" />
   </project>
   <project name="meta-clang" revision="master"  remote="kraj" path="meta-clang">
     <linkfile src="." dest="poky/meta-clang" />
   </project>
-  <project name="meta-raspberrypi" revision="master"  remote="yocto" path="meta-raspberrypi">
+  <project name="meta-raspberrypi" revision="gatesgarth"  remote="yocto" path="meta-raspberrypi">
     <linkfile src="." dest="poky/meta-raspberrypi" />
   </project>
-  <project name="meta-security" revision="master"  remote="yocto" path="meta-security">
+  <project name="meta-security" revision="gatesgarth"  remote="yocto" path="meta-security">
     <linkfile src="." dest="poky/meta-security" />
   </project>
   <project name="meta-webkit" revision="master"  remote="igalia" path="meta-webkit">
