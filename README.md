@@ -32,7 +32,7 @@ Finally, to checkout all the git repos (here poky + the various meta layers), th
 
 ## Branches
 
-Next to the current poky master branch, the manifest is also available for the poky zeus(yocto 3.0) and dunfell (yocto 3.1) branches. It simply named zeus.
+Next to the current poky master branch, the manifest is also available for the poky zeus(yocto 3.0) and dunfell (yocto 3.1 - Long Term Support (LTS)) branches.
 It can be used with **repo init** with the **-b <branchname>**, for instance for zeus:
 
     $ repo init -u git@github.com:chlongv/yocto-repo.git -b zeus
