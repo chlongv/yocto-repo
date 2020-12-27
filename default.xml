@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Link to the manifest format reference: https://gerrit.googlesource.com/git-repo/+/HEAD/docs/manifest-format.md -->
-  <default remote="yocto" revision="master"/>
+  <default remote="yocto" revision="dunfell"/>
 
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
@@ -12,7 +12,7 @@
   <project name="meta-openembedded" revision="dunfell"  remote="oe" path="meta-openembedded">
     <linkfile src="." dest="poky/meta-openembedded" />
   </project>
-  <project name="meta-clang" revision="master"  remote="kraj" path="meta-clang">
+  <project name="meta-clang" revision="dunfell"  remote="kraj" path="meta-clang">
     <linkfile src="." dest="poky/meta-clang" />
   </project>
   <project name="meta-raspberrypi" revision="dunfell"  remote="yocto" path="meta-raspberrypi">
