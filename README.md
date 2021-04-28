@@ -29,6 +29,7 @@ Finally, to checkout all the git repos (here poky + the various meta layers), th
 * meta-raspberrypi: git://git.yoctoproject.org/meta-raspberrypi
 * meta-security: git://git.yoctoproject.org/meta-security
 * meta-webkit: git://github.com/Igalia/meta-webkit
+* meta-riscv: git://github.com/riscv/meta-riscv
 
 ## Branches
 
