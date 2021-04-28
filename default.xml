@@ -7,6 +7,7 @@
   <remote name="oe" fetch="git://git.openembedded.org" />
   <remote name="kraj" fetch="git://github.com/kraj" />
   <remote name="igalia" fetch="git://github.com/Igalia" />
+  <remote name="riscv" fetch="git://github.com/riscv" />
 
   <project name="poky" revision="master" remote="yocto" />
   <project name="meta-openembedded" revision="master"  remote="oe" path="meta-openembedded">
@@ -23,5 +24,8 @@
   </project>
   <project name="meta-webkit" revision="master"  remote="igalia" path="meta-webkit">
     <linkfile src="." dest="poky/meta-webkit" />
+  </project>
+  <project name="meta-riscv" revision="master"  remote="riscv" path="meta-riscv">
+    <linkfile src="." dest="poky/meta-riscv" />
   </project>
 </manifest>
